@@ -216,7 +216,7 @@
                     $('#modelId').modal({
                         show: true
                     });
-                    $.ajax(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5788e4564138989b6c9fa919d90cdf2b`, {
+                    $.ajax(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5788e4564138989b6c9fa919d90cdf2b`,{
 
                         type: "GET",
 
@@ -244,7 +244,7 @@
                             else if ((data.weather[0].description == "moderate rain") || (data.weather[0].description == "rain") || (data.weather[0].description == "light rain")) {
                                 $("#rain").html("94%");
                             }
-                            let iconurl = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+                            let iconurl = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 
                             $(".modal-body").css("background", "transparent url('" + iconurl + "') no-repeat left top  ");
                             // ........showing time and date..........
