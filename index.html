@@ -244,7 +244,7 @@
                             else if ((data.weather[0].description == "moderate rain") || (data.weather[0].description == "rain") || (data.weather[0].description == "light rain")) {
                                 $("#rain").html("94%");
                             }
-                            let iconurl = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+                            let iconurl = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 
                             $(".modal-body").css("background", "transparent url('" + iconurl + "') no-repeat left top  ");
                             // ........showing time and date..........
